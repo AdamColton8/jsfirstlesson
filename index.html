@@ -5,7 +5,7 @@
     <title>JS TASK</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link >
+
 
 </head>
 
@@ -15,6 +15,129 @@
 
 
 <script>
+    //task 1
+
+//    var s = "Abs";
+//    var x = 5, y = 7;
+//
+//    if (s == "+") {
+//        y = y + x;
+//    } else if (s == "-") {
+//        y = y - x;
+//    } else if (s == "*") {
+//        y = y * x;
+//    } else if (s == "/") {
+//        y = y / x;
+//    } else if (s == "Abs" || s == "abs" || s == "ABS"){
+//        y = Math.abs(y);
+//    } else if (s== "MOD" || s == "Mod"){
+//        y = y % x;
+//    } else {
+//        y = x;
+
+//    }
+//    console.log("y = " + y);
+//
+//
+//    //task 2
+//for (var i=1; i <= 100; i++)
+//{
+//    if (i % 15 == 0)
+//        console.log("FizzBuzz");
+//    else if (i % 3 == 0)
+//        console.log("Fizz");
+//    else if (i % 5 == 0)
+//        console.log("Buzz");
+//    else
+//        console.log(i);
+//}
+
+
+//    var x = 0;
+//
+//    while (x < 100) {
+//
+//        x = x + 1;
+//
+//        if ( x % 3 === 0 && x % 5 === 0 ){
+//            console.log(x + ' Fizbuzz');
+//            continue;
+//        }
+//
+//        if( x % 3 === 0 ){
+//            console.log(x + ' Fizz');
+//            continue;
+//        }
+//
+//        if( x % 5 === 0 ) {
+//            console.log(x + ' Buzz');
+//            continue;
+//        }
+//
+//        console.log(x.toString());
+//
+//    }
+
+//var x = 0;
+//
+//do {
+//    x = x + 1;
+//    if ( x % 3 === 0 && x % 5 === 0 ){
+//            console.log(x + ' Fizbuzz');
+//            continue;
+//        }
+//
+//        if( x % 3 === 0 ){
+//            console.log(x + ' Fizz');
+//            continue;
+//        }
+//
+//        if( x % 5 === 0 ) {
+//            console.log(x + ' Buzz');
+//            continue;
+//        }
+//}   while(x < 100)
+
+
+    // var deposit = 10000, default_deposit = 10000, percent = 0.20, amount = 100000, month = 0;
+    //
+    // while (deposit < amount) {
+    //     deposit = deposit + (default_deposit * percent);
+    //
+    //     month++;
+    // }
+    // console.log('прошло месяцев ' +month, 'сумма депозита ' +deposit);
+
+
+
+    function full_stack(type) {
+        var deposit = 10000, default_deposit = 10000, percent = 0.20, amount = 100000, month = 0;
+
+
+        if (type != 1 && type != 2){
+            console.log("Вы ввели не 1 или 2");
+            return false;
+        }
+
+        while (deposit < amount) {
+            if (type == 1){
+                deposit = deposit + (default_deposit * percent);
+            } else if (type == 2){
+                deposit = deposit + (deposit * percent);
+            }
+
+
+
+                month++;
+            console.log('прошло месяцев ' +month,",", 'сумма депозита ' +deposit);
+        }
+
+    }
+    var conclusion;
+
+    conclusion = prompt("Введите 1 или 2");
+    full_stack(conclusion);
+
 
 
 </script>
